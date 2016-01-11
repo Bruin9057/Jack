@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<link href="../mui/css/mui.min.css" rel="stylesheet" />
+		<style>
+			body {
+				padding-top: 60px;
+			}
+			
+			.mui-input-group {
+				margin-top: 20px;
+				border-radius: 15px;
+				padding: 10px;
+				border: none;
+			}
+			
+			.mui-input-group label {
+				width: 22%;
+			}
+			
+			.mui-input-row {
+				height: 50px;
+			}
+			
+			.mui-input-row label~input {
+				width: 78%;
+			}
+			
+			.mui-btn-primary {
+				color: #fff;
+				border: 1px solid #06A7E2;
+				background-color: #06A7E2;
+			}
+			
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			
+			.mui-btn {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<img src="../styles/images/logo.png" width="100%" />
+			<div class='mui-h5 mui-ellipsis' style="text-align: center ;line-height: 30px; font-size:18px;" id="version">v2.3.1</div>
+
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row" style="height:50px;">
+					<label>账号</label>
+					<input id='userid' type="text" name="username" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row" style="height:50px;">
+					<label>密码</label>
+					<input id='password' name="password" type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id="login" class="mui-btn mui-btn-block mui-btn-primary">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../libs/ems.js" data-main = "./login.js"></script>
+</html>
